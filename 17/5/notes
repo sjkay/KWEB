@@ -1,0 +1,14 @@
+app = express()
+
+app. set(key, obj)
+app. get(key)
+
+app. get/put/post/etc ('/route', function(req,res) {})
+
+					Get /
+					Post /
+					Put /
+app. use('/route', function([err], req, res, next) {})
+
+/.t everything
+/.id /19 req params

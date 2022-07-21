@@ -1,0 +1,11 @@
+{
+  "name": "npm_sample",
+  "version": "1.0.0",
+  "description": "How to use npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "SJ KIM",
+  "license": "MIT"
+}

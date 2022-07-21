@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>keycode</title>
+	<style>
+		body{
+			background-size:cover;
+		}
+		#wrapper{
+			width:500px;
+			margin:0 auto;
+			text-align: center;
+		}
+		.back{
+			float:left;
+			width:30%;
+			height: 100px;
+			border: 1px solid black;
+			margin: 0px;
+			background-size: cover;
+		}
+		.one{
+			background-image: url(bg1.jpg);
+		}
+		.two{
+			background-image: url(bg2.jpg);
+		}
+		.three{
+			background-image: url(bg3.jpg);
+		}
+		p{
+			clear:both;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="back one"></div>
+		<div class="back two"></div>
+		<div class="back three"></div>
+		<p>1,2,3 버튼 누르면 배경 이미지 변경</p>
+	</div>
+	<script>
+        //여기에 코드 작성
+        var box = document.body;
+
+        function changeBackground(event) {
+        	var keyCode = event.keyCode;
+        	//alert(keyCode);
+
+        	switch(keyCode) {
+        		case 49:
+        			box.style.backgroundImage = "url(bg1.jpg)"
+        			break;
+        		case 50:
+        			box.style.backgroundImage = "url(bg2.jpg)"
+        			break;
+        		case 51:
+        			box.style.backgroundImage = "url(bg3.jpg)"
+        			break;
+        	}
+        }
+        box.addEventListener('keydown', changeBackground);
+	</script>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>준스5주차 - 예제 2</title>
+	<style>
+		body{
+			font-family: '맑은 고딕';
+			text-align: center;
+		}
+		#kweb{
+			font-size: 20pt;
+			color: white;
+			background: #DC143C;
+			padding: 10px;
+		}
+		input{
+			border: 1px solid #EAEAEA;
+		}
+	</style>
+</head>
+<body>
+	<div id="kweb">KWEB</div><br>
+	<div style="text-align: center;">
+		<label>랜덤으로 생성된 수: </label><span id="rannum">null</span>
+		<button onclick="make_ran()">랜덤 숫자 생성기 (범위: 1~100)</button>
+		<br><br>
+	</div>
+	<label>입력할 내용: </label><input type="text" name="senten" style="width: 500px">
+	<button onclick="split_with_space()">split!</button><br><br>
+	<div class="result"></div>
+	<script>
+		//여기에 내용을 추가하세요!
+		function make_ran() {
+			var ran_num = Math.ceil(Math.random()*100);
+			document.getElementById('rannum').innerHTML = ran_num;
+		}
+
+		function split_with_space() {
+			var senten = document.getElementsByName('senten')[0].value;
+			var words = senten.split(' ');
+			var result = document.getElementsByClassName('result')[0];
+			for(var i in words) {
+				result.innerHTML += words[i] + "<br>";
+			}
+		}
+	</script>
+</body>
+</html>

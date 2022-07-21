@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 9pt;
+	font-family: '맑은 고딕','Dotum','Arial';
+	color: #333333;
+	background: #F5F5F5;
+}
+body *{
+	font-size: inherit;
+	color: inherit;
+	box-sizing: border-box;
+}
+img, a, div, form{
+	border: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+input, button, textarea{
+	font-family: '맑은 고딕','Dotum','Arial';
+}
+textarea{
+	resize: none;
+}
+.inline{
+	float: left;
+	display: inline;
+}
+.elipsis{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+#head{
+	width: 100%;
+	min-width: 980px;
+	height: 50px;
+	background: #DC143C;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
+}
+
+#head>.inner{
+	height: 50px;
+	margin: 0 auto;
+}
+
+#head>.inner>.title{
+	color: white;
+	font-size: 17pt;
+	margin: 14px;
+	margin-top: 8px;
+	text-align: left;
+	float: left;
+	display: inline;
+}
+#head>.inner>.logo{
+	float: right;
+	margin-right: 5px;
+}
+#head>.inner>.logo>img{
+	margin-top: 5px;
+	height: 40px;
+}
+#content{
+	width: 980px;
+	margin: 10px auto;
+	padding-top: 50px;
+	text-align: left;
+	overflow: hidden;
+}
+
+#content>.maincontent{
+	width: 720;
+	min-height: 10px;
+	overflow: hidden;
+	float: left;
+}
+#content>.maincontent>.box{
+	width: 700px;
+	padding: 20px;
+	padding-top: 0;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #EAEAEA;
+	border-bottom: 1px solid #DDD;
+	background: #FFF;
+	overflow: hidden;
+}
+#content>.maincontent>.box>.title{
+	overflow: hidden;
+}
+#content>.maincontent>.box>.title>span{
+	line-height: 45px;
+	border-top: 5px solid #610B0B;
+	color: #8A0808;
+	font-size: 16pt;
+	font-weight: bold;
+	float: left;
+}
+#content>.sideContent{
+	padding-left:10px;
+	overflow:hidden;
+}
+#content>.sideContent>.box{
+	padding: 20px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #EAEAEA;
+	border-bottom: 1px solid #DDD;
+	background: #FFF;
+	overflow: hidden;
+}
+#content>.sideContent>.box>.title{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #DDD;
+	font-size: 11pt;
+	font-weight: bold;
+}
+#content>.sideContent>.box>.content{
+	margin-top: 20px;
+	color: #777;
+	text-align: justify;
+	overflow: hidden;
+}
+#content>.sideContent>.Info>.name_wrap>.name{
+	height: 20px;
+	line-height: 20px;
+	font-size: 11pt;
+	font-weight: bold;
+	text-align: center;
+}
+#content>.sideContent>.Info>.deadline{
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #DDD;
+}
+#content>.sideContent>.Info>.deadline>.row{
+	height: 20px;
+	overflow: hidden;
+}
+#content>.sideContent>.Info>.deadline>.row.cursor{
+	cursor: pointer;
+}
+#content>.sideContent>.Info>.deadline>.row>.left{
+	width: 100px;
+	height: 20px;
+	line-height: 20px;
+	color: #777;
+	font-weight: bold;
+	float: left;
+}
+#content>.sideContent>.Info>.deadline>.row>.right{
+	height: 20px;
+	line-height: 20px;
+	color: #777;
+	text-align: right;
+	overflow: hidden;
+}
+#content>.sideContent>.Info>.deadline>.row>.right>span{
+	font-size: 10pt;
+	color: #DC143C;
+	font-weight: bold;
+}
+#content>.sideContent>.Info>.deadline>.row2{
+	width: 210px;
+	border: 1px solid #DDD;
+	padding: 10px;
+	padding-left: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	font-size: 8pt;
+	color: #999;
+	text-align: left;
+}
+#content>.sideContent>.Info>.btnWrap>{
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #DDD;
+	overflow: hidden;
+}
+#content>.sideContent>.Info>.btnWrap>.evalBtn{
+	width: 100%;
+	height: 45px;
+	padding-right: 20px;
+	margin-top: 5px;
+	border: none;
+	border-radius: 3px;
+	color: #FFF;
+	font-size: 11pt;
+	background: #DC143C;
+	cursor: pointer;
+}
+#content>.sideContent>.guide{
+	padding: 20px 0;
+	font-size: 10pt;
+	color: #777;
+	font-weight: bold;
+	text-align: center;
+}
+#content>.sideContent>.guide>.left{
+	width: 50%;
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	border-right: 1px solid #DDD;
+	cursor: pointer;
+}
+#content>.sideContent>.guide>.right{
+	height: 20px;
+	line-height: 20px;
+	color: #DC143C;
+	overflow: hidden;
+	cursor: pointer;
+}
+#tail{
+	background: #FFF;
+	border-top: 1px solid #DDD;
+	overflow: hidden;
+}
+#tail>.inner{
+	width: 980px;
+	margin: 0 auto;
+	padding: 20px 0;
+	overflow: hidden;
+}
+#tail>.inner>.last{
+	color: #777;
+	font-size: 11pt;
+}
+#tail>.inner>.last>.red{
+	font-weight: bold;
+	color: #DC143C;
+}

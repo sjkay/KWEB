@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Don't COPY</title>
+	<link type="text/css" rel="stylesheet" href="./css/kweb.css">
+	<link type="text/css" rel="stylesheet" href="./css/plus.css">
+	<script src='./assignment.js'></script>
+</head>
+<body>
+	<div id='head'>
+		<div class="inner">
+			<div class='title'><a href='./index.html'>KWEB 준스</a></div>
+			<div class="logo">
+				<img src="./images/kweb.png">
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div class="maincontent">
+			<div class="welcome_wrap box">
+				<div class="title"><span>&nbsp공지사항&nbsp</span></div>
+				<div class="content">
+					<strong>과제 COPY는 안돼요!!</strong><br><br>
+					안녕하세요 KWEB 회장 입니다. <br><br>
+
+					설마 올해는.. 과제를 베끼거나 선배들 숙제를 받아 제출한 사람은 없겠죠..<br><br>
+
+					올해도 <span id="line">5주차 과제는 새롭게 구성해 출제</span>했습니다!! 작년 과제에 대해 들은 바가 있을까요..? ㅎ<br><br>
+
+					오른쪽에 과제 안내를 누르시면 과제를 보실 수 있습니다. 과제 난이도가 이전에 비해 다소<br><br>
+
+					어려우니 스터디장들 잘 괴롭혀보세요! Hint도 준비해놓았습니다~<br><br>
+
+					숙제 제출시 이메일 제목을 <strong>[KWEB 준스5주차] 학번_이름</strong>으로 해주시면 감사하겠습니다..! <br><br>
+
+					JavaScript 과제 열심히 하시고 파이팅입니다~ (이 문서는 KLUE 디자인 차용했어요!) <br><br>
+
+					<strong>케.웹.조.아. KWEB 회장 드림</strong>
+				</div>
+			</div>
+			<div class="title">과제</div>
+			<div class="assignment">
+				<div class="one box">
+					<div class="title">
+						<div class="name"><span id="crsb">문제 1</span> - 연결되어 있는 html 파일에 과제 안내사항대로 Javascript로 구현하기!</div>
+					</div>
+					<div class="content">
+						과제 1은 과제 안내대로 assignment.html 파일을 수정하고 만드는 것입니다. <br><br>
+						<button type='button' class="button1" onclick="location.href='./assignment.html'">assignment.html 열기</button>
+					</div>
+				</div>
+				<div class="two box">
+					<div class="title">
+						<div class="name"><span id="crsb">문제 2</span> - Javascript로 버튼에 기능 부여하기</div>
+					</div>
+					<div class="content">
+						과제2는 아래 2개의 버튼을 동작하게 만드는 것입니다. 자세한 사항은 과제 안내 파일 참조!! 
+						<br><br>
+						<button type='button' class="button1" id='notice1' onclick="changenotice1()">공지사항 없애기</button>
+						<button type='button' class="button1" id='notice2' onclick="changenotice2()">공지사항 숨기기</button>
+					</div>
+				</div>
+				<div class="three box">
+					<div class="title">
+						<div class="name"><span id="crsb">문제 3</span> - 입력한 내용을 이용하여 팝업 레이어 띄우기</div>
+					</div>
+					<div class="content">
+						Javascript를 이용하여 Input에 입력한 내용을 지정한대로 수정해 팝업 레이어로 띄우는 함수를 구현하시오.<br><br>
+						<div class="input3">
+							<h1 class="title2">Input</h1><textarea name="content" rows="10"></textarea><br>
+						</div>
+						<button type='button' class="button1" id="makepop" onclick="popup()">팝업 레이어 생성!</button>
+						<div class="popup">
+							<div class="title2"><h1>Output</h1></div>
+							<div class="content"></div>
+							<button id="close" onclick="close_p()">close</button>
+						</div>
+					</div>
+				</div>
+				<div class="four box">
+					<div class="title">
+						<div class="name"><span id="crsb">문제 4</span> - 클릭한 그림 새 창에 띄우기</div>
+					</div>
+					<div class="content">
+						Javascript를 이용하여 과제안내에서 지시하는대로 함수를 구현하시오. <br><br>
+						<img src="./images/img1.jpg" onclick="imgopen(this.src)">
+						<img src="./images/img2.jpg" onclick="imgopen(this.src)">
+						<img src="./images/img3.jpg" onclick="imgopen(this.src)">
+						<img src="./images/img4.jpg" onclick="imgopen(this.src)">
+					</div>
+				</div>
+				<div class="five box">
+					<div class="title">
+						<div class="name"><span id="crsb">문제 5 (Optional!)</span> - 면제 카운트를 얻어 봅시다!</div>
+					</div>
+					<div class="content">
+						문제 5는 면제 COUNT를 얻을 수 있는 과제입니다. <필수과제는 아닙니다!!!><br><br> 과제안내의 명세에 따라 ①과 ② 중 하나를 선택하셔서 웹짱 (배민근: baemingun@naver.com)에게 제출하시면 됩니다. ①과 ② 동시에 제출하셔도 둘 중 하나에 대해서만 면제 카운트가 인정됩니다. 
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sideContent">
+			<div class='Info box'>
+				<div class='name_wrap'>
+					<div class='name'>과제 제출 안내사항</div>
+				</div>
+				<div class='deadline'>
+					<div class='row'>
+						<div class='left'>제출기한</div>
+						<div class='right'><span class='bold'>2017년 6월 21일</span>까지</div>
+					</div><br>
+					<div class='row cursor'>
+						<div class='left'>스터디장 E-mail</div>
+						<div class='right'><span class='bold'>As fast as you can!!</span></div>
+					</div>
+					<div class='row2'>
+						월) 이승열: josephlsy777@gmail.com<br>
+						화) 나석주: seokmaTD@gmail.com<br>
+						목) 전용석: ysjeon741@gmail.com<br>
+						웹짱) 배민근: baemingun@naver.com
+					</div>
+				</div>
+				<div class="btnWrap">
+					<button type='button' class='evalBtn' onclick="location.href='http://kweb.korea.ac.kr'">KWEB 홈페이지</button>
+				</div>
+			</div>
+			<div class='guide box'>
+				<div class="left" onclick="location.href='./info/guide.pdf'">과제 안내</div>
+				<div class="right" onclick="location.href='./info/hint.pdf'">Hint!</div>
+			</div>
+		<div class='facebook box'>
+			<div class='title' style="text-align: center;">KWEB 페이스북</div>
+			<div class='content'>
+				<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com/kwebfamily&width=225&height=558&colorscheme=light&show_faces=true&header=false&stream=true&show_border=false" scrolling="no" frameborder="0" style="margin-left: 2px; border:none; overflow:hidden; width:225px; height:558px;" allowTransparency="true"></iframe>
+			</div>
+		</div>
+	</div>
+
+	</div>
+	<div id='tail'>
+		<div class="inner">
+			<div class="last"><a href='http://kweb.korea.ac.kr/' target='_blank' class='red'>KWEB</a> 준회원스터디 5주차 과제 ◆ 2017 Spring semester</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+	<head>
+		<title>2주차 스터디 과제</title>
+		<style>
+			.container {
+				height: 250px;
+				width: 300px;
+				font-size: 120%;
+				font-style: italic;
+				font-weight: bolder; 
+				color: white;
+				margin: 30px;
+				border-style: dashed;
+			}
+			#registration {
+				background-color: black;
+			}
+			#spain {
+				background-size: 100%;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="container" id="registration">
+			<table border ="1">
+				<tr>
+					<td colspan="2">회원가입 신청서</td>
+				</tr>
+				<tr>
+					<td>아이디</td>
+					<td><input type="select"></td>
+				</tr>
+				<tr>
+					<td>비번</td>
+					<td><input type="password"></td>
+				</tr>
+				<tr>
+					<td>비번확인</td>
+					<td><input type="password"></td>
+				</tr>
+				<tr>
+					<td>이메일</td>
+					<td><input type="email"></td>
+				</tr>
+				<tr>
+					<td>성별</td>
+					<td><input type="radio" name="gender">남성<input type="radio" name="gender">여성</td>
+				</tr>
+				<tr>
+					<td>직업</td>
+					<td>
+						<select name="job">
+							<option value="uni">대딩</option>
+							<option value="teacher">교수/선생님</option>
+							<option value="alien">우주비행사</option>
+							<option value="programmer">프로그래머</option>
+							<option value="progamer">프로게이머</option>
+							<option value="freedom">무직</option>
+							<option value="etc">기타 외.</option>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" value="제출"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="flag" id="spain" style="height: 400px;width: 600px;margin: 30px;">
+			<div style="height: 100px;width: 600px;background-color: red;"></div>
+			<div style="height: 200px;width: 600px;background-image: url(spain_logo.png);background-size: 100% 100%;"></div>
+			<div style="height: 100px;width: 600px;background-color: red;"></div>
+		</div>
+		<div class="flag" id="germany" style="height: 400px;width: 600px;margin: 30px;">
+			<div style="height: 100px;width: 600px;background-color: black;"></div>
+			<div style="height: 100px;width: 600px;background-color: red;"></div>
+			<div style="height: 100px;width: 600px;background-color: yellow;"></div>
+		</div>
+	</body>
+</html>

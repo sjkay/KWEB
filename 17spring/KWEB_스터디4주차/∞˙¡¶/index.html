@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>KWEB 4주차 과제</title>
+	<style>
+	.problem {
+		margin-bottom: 100px;
+	}
+	.row {
+		width: 80%;
+		height: 110px;
+		margin: 50px auto 0px auto;
+	}
+	.box {
+		width: 8%;
+		height: 50px;
+		background-color: pink;
+		margin: 0 1%;
+		padding: 0.5em;
+		float: left;
+	}
+	.container {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#timesTable {
+		padding: 1em;
+		width: 70%;
+		height: 20em;
+		margin: 10px auto;
+		border: 1px solid black;
+	}
+	img#p1 {
+		width: 80%;
+		margin: 10px;
+		border: 1px solid black;
+	}
+	</style>
+	<script type="text/javascript" src="problem1.js"></script>
+	<script type="text/javascript" src="problem2.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="problem">
+		<h1>P1. Visibility</h1>
+		<p>아래에는 1번부터 8번까지의 box들이 있습니다</p>
+		<p>&#9755;1번 버튼을 누르면 아래와 같이 홀수번째의 box를 숨깁니다.</p>
+		<p>&#9755;2번 버튼을 누르면 아래와 같이 짝수번째의 box를 숨깁니다.</p>
+		<p>&#9755;3번 버튼을 누르면 박스가 3의 배수 숫자의 박스 색이 바뀝니다.</p>
+		<p>&#9755;되돌리기 버튼을 누르면 박스가 원래대로 돌아갑니다.</p>
+		<img id="p1" src="p1.jpg" alt="pic">
+	
+		<div class="row">
+			<div class="box">1</div>
+			<div class="box">2</div>
+			<div class="box">3</div>
+			<div class="box">4</div>
+			<div class="box">5</div>
+			<div class="box">6</div>
+			<div class="box">7</div>
+			<div class="box">8</div>
+		</div>
+		<p>
+			<button onclick="btn1()">1</button>
+			<button onclick="btn2()">2</button>
+			<button onclick="btn3()">3</button>
+			<button onclick="initBoxes()">되돌리기</button>
+		</p>
+		</div>
+
+		<div class="problem">
+		<h1>P2. 구구단</h1>
+		<p>
+			<input type="text" id="dan"/>
+			<button onclick="myFunc1()">alert</button>
+			<button onclick="myFunc2()">innerHTML</button>
+			<button onclick="clearTable()">clear</button>
+		</p>
+		<p id="timesTable">Change here!!</p>
+		</div>
+		
+	</div>
+
+</body>
+</html>

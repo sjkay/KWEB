@@ -1,0 +1,18 @@
+/* 여기에 CSS를 입력하세요. */
+section {
+	margin-left: 170px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+nav {
+	float: left;
+	margin: 10px;
+}
+footer {
+	margin-top: 10px;
+}
+.Banner {
+	float: right;
+	margin-top: -67px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>2017-1 준회원 스터디 4주차 ex2</title>
+	<style>
+	.box {
+		width: 100px;
+		height: 100px;
+		background-color: pink;
+		margin-bottom: 10px;
+
+		padding: 0.5em;
+	}
+
+	#new {
+		width: 200px;
+		height: 200px;
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="box" id="one">1</div>
+		<div class="box" id="two">2</div>
+		<div class="box" id="three">3</div>
+		<div class="box" id="four">4</div>
+		<div class="box" id="five">5</div>
+		<button onclick="change()">change</button>
+	</div>
+
+
+	<script>
+
+	function change() {
+		var one = document.getElementById('one');
+		window.alert(one.innerHTML);
+
+		var boxes = document.getElementsByClassName('box');
+		boxes[1].innerHTML = "two!!!";
+		boxes[2].style.backgroundColor = "yellow";	// Camelcase
+		boxes[3].id = "new";
+	}
+
+
+/*
+	// 해당 id의 element를 return합니다.
+	document.getElementById(id)
+
+	// 해당 tag name을 가진 element들의 array를 return합니다. 
+	document.getElementsByTagName(name)
+
+	// 해당 class name을 가진 element들의 array를 return합니다. 
+	document.getElementsByClassName(name)
+
+	// 해당 name attribute를 가진 element들의 array를 return합니다.
+	document.getElementsByName(name)
+*/
+
+/*
+	// 브라우저에 text 라고 적힌 알림창을 띄웁니다.
+	window.alert(text)
+
+	// 선택한 element안을 text로 변경합니다.
+	element.innerHTML(text)
+
+	// 선택한 element의 attribute를 value로 변경합니다.
+	element.attribute = value				
+	element.setAttribute(attribute, value)
+
+	// 선택한 element의 style을 변경합니다.
+	element.style.property = newStyle
+*/
+
+	</script>
+</body>
+</html>

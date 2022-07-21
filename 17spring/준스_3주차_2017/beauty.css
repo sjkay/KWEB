@@ -1,0 +1,50 @@
+* { box-sizing: border-box; }
+
+#wrapper {
+	padding: 16px;
+}
+
+nav, section, footer, .Banner {
+	font-family: sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	color: #333;
+}
+
+.Container {
+	border: solid blue 3px;
+}
+
+nav {
+	width: 150px;
+	height: 200px;
+	padding: 8px;
+	border: solid #D64078 3px;
+}
+
+section {
+	padding: 8px;
+	border: solid #FDC72F 3px;
+}
+
+.Content1 {
+	height: 100px;
+}
+
+.Content2 {
+	height: 200px;
+}
+
+footer {
+	height: 100px;
+	padding: 8px;
+	border: solid #96C02E 3px;
+}
+
+.Banner {
+	padding: 8px;
+	border: solid #6AC5AC 3px;
+	width: 75px;
+	height: 75px;
+	background-color: white;
+}

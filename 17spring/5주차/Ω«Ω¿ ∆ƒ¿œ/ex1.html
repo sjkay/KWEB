@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>준스5주차 - 예제 1</title>
+	<style>
+		body{
+			font-family: '맑은 고딕';
+		}
+		#kweb{
+			font-size: 20pt;
+			color: white;
+			text-align: center;
+			background: green;
+			padding: 10px;
+		}
+		#content{
+			text-align: center;
+			padding-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="kweb">KWEB</div><br>
+	<div id="content">
+		안녕하십니까? KWEB 최고의 귀염둥이 <span id="cute">원하시는 사람 이름 넣어보세요!</span> 인사드립니다.
+	</div>
+	<script>
+		//여기에 내용을 추가하세요!
+		document.getElementById('kweb').style.backgroundColor = "red";
+		document.getElementById('content').style.textAlign = "left";
+		document.getElementById('content').style.fontSize = "14px";
+		document.getElementById('cute').style.textDecoration = "underline";
+		document.getElementById('cute').style.fontWeight = "bold";
+		document.getElementById('cute').innerHTML = "홍길동";
+	</script>
+</body>
+</html>

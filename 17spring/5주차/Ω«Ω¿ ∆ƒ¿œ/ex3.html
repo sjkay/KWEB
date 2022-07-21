@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>준스5주차 - 예제 2</title>
+	<style>
+		body{
+			font-family: '맑은 고딕';
+		}
+		#kweb{
+			font-size: 20pt;
+			color: white;
+			text-align: center;
+			background: #DC143C;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="kweb">KWEB</div><br>
+	<div style="text-align: center;">
+		<label>현재 초: </label><span id="timesec">0</span>&nbsp;
+		<button onclick="stop()">일시정지</button>
+		<button onclick="restart()">시간 다시 흐르기</button>
+		<button onclick="moment()">시간 순간 캡쳐</button>	
+	</div>
+	<script>
+		//여기에 내용을 추가하세요!ㅜ
+		var interval_sec;
+		var flag = true;
+
+		function increaseSec() {
+			document.getElementById('timesec').innerHTML++;
+		}
+		function start() {
+			interval_sec = setInterval(increaseSec, 1000);
+		}
+
+		function stop() {
+			if(!flag) {
+				alert("이미 정지");
+			}
+			clearInterval(interval_sec);
+			flag = false;
+		}
+
+		function restart() {
+			if(flag){
+				alert("이미 작동");
+			}
+			interval_sec = setInterval(increaseSec, 1000);
+			flag = true;
+		}
+
+		function moment() {
+			var current = document.getElementById('timesec').innerHTML;
+			var newWindow = open("", "name1", "width=500px, height=400px");
+			newWindow.document.write(current + "초 입니다.<br>")
+		}
+
+		start();
+	</script>
+</body>
+</html>
